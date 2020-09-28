@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul McCartney Contacto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <meta name="description" content="Paul McCartney Contacto">
+</head>
+
+
+
+
+<body>
+    
+    <header>
+    
+      <nav class="navbar navbar-expand-lg navbar-light navbarestilo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="tour.html">Tour</a>
+            <a class="nav-link" href="discografia.html">Discografia</a>
+            <a class="nav-link" href="galeria.html">Galeria</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </div>
+        </div>
+      </nav>
+    
+    
+    
+    <section>
+
+    
+    <article class="contacto">
+        <h1>Contacto</h1>
+
+    <p>
+        Envianos tus comentarios acerca de experiencias vividas en conciertos, o cualquier tipo de vivencia relacionada a la
+        musica de Paul McCartney!
+    </p>
+
+
+    <form class="needs-validation contacto__formulario" novalidate>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom01">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom02">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Ok!
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Ingrese el nombre de su ciudad.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom04">Provincia</label>
+          <select class="custom-select" id="validationCustom04" required>
+            <option selected disabled value="">Elegir...</option>
+            <option>Buenos Aires</option>
+            <option>Cordoba</option>
+            <option>Neuquen</option>
+            <option>Rio Negro</option>
+            <option>Salta</option>
+            <option>Jujuy</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+
+          </select>
+          <div class="invalid-feedback">
+            Selecciona una Provincia valida .
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationCustom05">Codigo Postal</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Ingrese su codigo postal.
+          </div>
+
+          
+        </div>
+
+              
+
+      </div>
+      <div class="form-group">
+
+        <div class="mb-3">
+          <label for="validationTextarea">Textarea</label>
+          <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+          <div class="invalid-feedback">
+            Ingrese el mensaje.
+          </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Acepto los terminos y condiciones
+          </label>
+          <div class="invalid-feedback">
+            Debe aceptar antes de enviar.
+          </div>
+        </div>
+              
+
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">
+              Recibir el newsletter
+            </label>
+          </div>
+
+          </div>
+      </div>
+      <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#staticBackdrop">Enviar</button>
+    </form>
+
+
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            El servicio de mensajeria no se encuentra disponible
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Ok!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>  
+
+
+
+
+</article>
+
+
+
+</section>
+
+    
+      
+    
+    
+    
+    
+    
+    
+
+
+<footer class="footer">           
+  <ul>
+    <a href=""><img src="../img/instagram.png" alt=""></a>
+    <a href=""><img src="../img/twitter.png" alt=""></a>
+    <a href=""><img src="../img/facebook.png" alt=""></a>
+    <a href=""><img src="../img/spotify.png" alt=""></a>
+  </ul>
+  <p>Copyright Federico Illuminato© </p>                      
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
+
