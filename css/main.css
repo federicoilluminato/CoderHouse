@@ -492,7 +492,7 @@ p {
 
 .noticias__container2 {
   margin: 10% 10%;
-  padding: 3em 3em;
+  padding: 0.9em 0.9em;
   background-color: #000000;
   max-width: 100%;
   border: #E8C292 solid 1em;
@@ -548,6 +548,12 @@ p {
 @media (max-width: 768px) {
   .noticias_containeritems_grid img {
     /* Mobile */
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .noticias_containeritems_grid img {
+    /* Tablet */
     width: 100%;
   }
 }
