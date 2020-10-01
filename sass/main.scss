@@ -19,7 +19,7 @@ body {
 
     @media (max-width: 768px) {
         /* Mobile */ 
-    background-image:
+
         
 
     }
@@ -103,12 +103,36 @@ p {
     p {
         color: black;
         text-shadow: none;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     ul {
+        margin: 0.5em 0.5em;
+        padding: 0.5em 3em;
+        display: flex;
+        flex-wrap: nowrap;
+
+        @media (max-width: 768px) {
+            /* Mobile */ 
+            
+            padding: 0.25em 1.5em;
     
     
+        }
+
+        img {
+            width: 45px;
+
+            @media (max-width: 768px) {
+                /* Mobile */ 
+                
+                width: auto;
+        
+        
+            }
+
+        }
+
     }
 }
 
@@ -179,22 +203,27 @@ header {
         text-align: center;
         justify-content: center;
 
-        .btn {
-            font-size: 10px;
-        }
 
-
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             /* Mobile */ 
     
             grid-template-rows: 90px 90px 90px 90px 90px 90px 90px 90px;
             grid-template-columns:100px 100px 100px;
+
+            .btn {
+                font-size: 10px;
+            }
         }
 
-        @media (min-width: 769px) and (max-width: 1200px) {
+        @media (min-width: 768px) and (max-width: 1200px) {
             /* Tablet */
+
+            grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
+            grid-template-columns:150px 150px 150px;
         
+
         }
+
 
 
         li {
@@ -207,6 +236,8 @@ header {
 }
 
 
+
+
 .homepage__main {
     text-align: center;
     padding: 3.75em 3.75em;
@@ -216,24 +247,23 @@ header {
     h1 {
         color: $blanco2;
         text-shadow: 9px 9px black;
-        max-width: 100%;
 
         @media (max-width: 768px) {
             /* Mobile */ 
                 
                 max-width: 100%;
-                font-size: 3.5em;
+                font-size: 3em;
                 padding: 3px 10px;
 
     
     
         }
 
-        @media (min-width: 769px) and (max-width: 1200px) {
+        @media (min-width: 768px) and (max-width: 1200px) {
             /* Tablet */
 
                 max-width: 100%;
-                font-size: 6em;
+                font-size: 4em;
                 padding: 10px 30px;
 
 
@@ -251,30 +281,49 @@ header {
 
 
 .homepage__descripcion {
-    font-size: 0.9em;
+    font-size: 0.6em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-style: italic;
     text-shadow: 3px 2px black;
+    max-height: 50%;
+    overflow: hidden;
+
+
+
+    @media (max-width: 768px) {
+        /* Mobile */ 
+        
+        font-size: 0.5em;
+
+
+    }
+
+    
+    @media (min-width: 768px) and (max-width: 1200px) {
+        /* Tablet */
+        font-size: 0.7em;
+    }
 
     p {
         background-color: black;
         opacity: 80%;
+        font-size: 2em;
 
 
 
         @media (max-width: 768px) {
             /* Mobile */ 
             
-            font-size: 1.2em;
+            font-size: 1.3em;
     
     
         }
-        @media (min-width: 769px) and (max-width: 1200px) {
+        @media (min-width: 768px) and (max-width: 1200px) {
             /* Tablet */
     
     
-            font-size: 1.4em;
+            font-size: 1.5em;
     
         }
 
@@ -319,6 +368,16 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
     /*border: 9px solid white;*/
 
+
+    @media (max-width: 768px) {
+        /* Mobile */ 
+        
+        margin: 3em;
+
+    }
+
+
+
     li {
         align-items: center;
     }
@@ -332,16 +391,62 @@ header {
     justify-content: space-between;
     margin: 1em;
     overflow: hidden;
+    border: $blanco2 solid 6px;
+
+    @media (max-width: 768px) {
+        /* Mobile */ 
+        
+        margin: 0.2em;
+        justify-content: space-evenly;
+
+    }
 
 
     p {
         margin: 3em;
+
+
+        @media (max-width: 768px) {
+            /* Mobile */ 
+            
+            font-size: 0.8em;
+            margin: 0.3em;
+    
+        }
+    
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+            /* Tablet */
+    
+            margin: 2em;
+           
+    
+        }
+
+
     }
 
     iframe {
         animation: fadein 3s forwards;
         animation-delay: 0.3s;
         opacity: 0;
+
+
+        @media (max-width: 768px) {
+            /* Mobile */ 
+            
+            width: 200px;
+    
+        }
+    
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+            /* Tablet */
+    
+
+    
+        }
+
 
     }
 
@@ -354,7 +459,30 @@ header {
 
 
 
+    @media (max-width: 768px) {
+        /* Mobile */ 
+        
+        flex-direction: column-reverse;
 
+
+    }
+
+    @media (min-width: 769px) and (max-width: 1200px) {
+        /* Tablet */
+
+        flex-direction: column-reverse;
+       
+
+    }
+
+
+}
+
+
+.resaltar {
+    font-size: 2em;
+    color: $blanco2;
+    font-family: 'Ranchers', italic;
 }
 
 .homepage__background {
@@ -386,13 +514,43 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 12%;
+    margin: 10%;
     overflow: hidden;
     background-color: $negro2;
     border: $blanco2 solid 6px;
 
     iframe {
         margin: 3em;
+
+        @media (max-width: 767px) {
+            /* Mobile */ 
+        
+          width: 80%;
+          justify-content: space-evenly;
+          text-align: center;
+          margin: 2em;
+    
+        }
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+            /* Tablet */
+            
+    
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        /* Mobile */ 
+    
+
+
+    }
+
+    @media (min-width: 769px) and (max-width: 1200px) {
+        /* Tablet */
+
+
     }
 
 
@@ -404,7 +562,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 12%;
+    margin: 10%;
     object-fit: cover;
     background-color: $negro2;
     border: $blanco2 solid 6px;
@@ -414,6 +572,15 @@ header {
         object-fit: cover;
         opacity: 50%;
 
+
+        @media (max-width: 768px) {
+            /* Mobile */ 
+        
+            width: 80%;
+            justify-content: space-evenly;
+            text-align: center;
+    
+        }
 
 
     }
@@ -459,6 +626,26 @@ header {
     padding: 3em 3em;
     background-color: $negro2;
     border: $blanco2 solid 1em;
+
+
+    @media (max-width: 768px) {
+        /* Mobile */ 
+        
+        margin: 3em;
+        padding: 1em 1em;
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1200px) {
+        /* Tablet */
+
+
+
+    }
 
 
 }
@@ -523,6 +710,15 @@ header {
     max-width: 100%;
     border: $blanco2 solid 1em;
 
+
+    @media (max-width: 768px) {
+        /* Mobile */ 
+
+        padding: 0em 0em;
+
+    }
+
+
     p {
         font-size: 1.5em;
     }
@@ -531,6 +727,10 @@ header {
         text-align: center;
     }
 
+    iframe {
+        height: 90%;
+        width: 100%;
+    }
 }
 
 
@@ -541,16 +741,49 @@ header {
         display: grid;
         grid-template-rows: 1fr 1fr auto;
 
+        @media (max-width: 768px) {
+            /* Mobile */ 
+
+            grid-template-rows: auto auto auto;
+
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+            /* Tablet */
+    
+            grid-template-rows: auto auto auto;
+    
+        }
+
+
+
+
 
 
         p {
             font-size: 1.5em;
+            
+            @media (max-width: 768px) {
+                /* Mobile */ 
+    
+                font-size: 0.9em;
+    
+            }
             
         }
 
         img {
             display: flex;
             justify-self: center;
+
+            @media (max-width: 768px) {
+                /* Mobile */ 
+    
+                width: 100%;
+    
+            }
+
+
         }
 
         .noticias_containeritems_doble {
@@ -558,10 +791,32 @@ header {
             grid-template-columns: 1fr 1fr;
             align-content: center;
 
+
+            @media (min-width: 769px) and (max-width: 1200px) {
+                /* Tablet */
+        
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+        
+            }
+
+            @media (max-width: 768px) {
+                /* Mobile */ 
+    
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+    
+            
+    
+    
+            }
+
             iframe {
                 display: flex;
                 justify-content: center;
                 justify-self: center;
+
+                
         }
 
     }
